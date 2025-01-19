@@ -1,12 +1,14 @@
 
 .side-bar {
-    width: 15.5rem;
+    width: 14.5rem;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+    margin: 0.5rem;
+    border-radius: 20px;
     padding: 0.5rem 1rem;
-    // background-color: red;
+    background-color: var(--color-2);
 
     .varologo {
       max-width: 70px;

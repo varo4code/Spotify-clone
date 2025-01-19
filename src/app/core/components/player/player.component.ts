@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerComponent implements OnInit {
 
+  song:any = {title: 'Blur', artist: 'Imagine Dragons', cover: 'assets/covers/imagine-dragons-mercury.webp'}
+
   constructor() { }
 
   ngOnInit(): void {
