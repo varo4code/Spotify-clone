@@ -4,10 +4,6 @@
   "compilerOptions": {
     "resolveJsonModule": true,
     "baseUrl": "./",
-    "paths": {
-      "@core/*": ["scr/app/core/*"], 
-      "@modules/*": ["scr/app/modules/*"], 
-    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -21,6 +17,11 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
+    "paths": {
+      "@icons/*": ["src/assets/icons/*"],
+      "@core/*": ["src/app/core/*"],
+      "@modules/*": ["src/app/modules/*"],
+    },
     "lib": [
       "es2018",
       "dom"

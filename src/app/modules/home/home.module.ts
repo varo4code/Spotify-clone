@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { CoreModule } from '@core/core.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { HomepageComponent } from './components/homepage/homepage.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    CoreModule
   ]
 })
 export class HomeModule { }
