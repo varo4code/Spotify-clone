@@ -2,7 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "resolveJsonModule": true,
     "baseUrl": "./",
+    "paths": {
+      "@core/*": ["scr/app/core/*"], 
+      "@modules/*": ["scr/app/modules/*"], 
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
