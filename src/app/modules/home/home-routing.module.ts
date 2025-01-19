@@ -11,8 +11,8 @@ const routes: Routes = [
     loadChildren: () => import('@modules/history/history.module').then(m => m.HistoryModule)
   },
   {
-    path: 'likes',
-    loadChildren: () => import('@modules/tracks/tracks.module').then(m => m.TracksModule)
+    path: 'favs',
+    loadChildren: () => import('@modules/likes/likes.module').then(m => m.LikesModule)
   }
 ];
 

@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LikesComponent } from './components/likes/likes.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: LikesComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
