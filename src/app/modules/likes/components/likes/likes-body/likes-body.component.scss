@@ -1,12 +1,15 @@
 .play-list-body {
     padding: 1rem 2rem;
-  }
+    li {
+      margin-right: 5px;
+    }
+}
   
   .play-list-table-header {
     width: 100%;
     list-style: none;
     display: grid;
-    grid-template-columns: 3fr 2fr 2fr 1fr;
+    grid-template-columns: 4fr 4fr 1fr;
     margin: 0;
     padding: 0;
     font-size: 90%;
@@ -25,13 +28,16 @@
     width: 100%;
     list-style: none;
     display: grid;
-    grid-template-columns: 3fr 2fr 2fr 1fr;
+    grid-template-columns: 4fr 4fr 1fr;
     margin: 0;
     padding: 1rem 0 0 0;
   
     .track-name-opacity {
       opacity: 0.7;
       font-weight: 300;
+      &.duration{
+        font-family: monospace;
+      }
     }
   }
   

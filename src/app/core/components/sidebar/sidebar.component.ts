@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  route: Array<any> = [];
+
   menu: {
     genericItems: Array<any>, extraItems: Array<any>
   } = { genericItems: [], extraItems: [] }
@@ -21,47 +23,40 @@ export class SidebarComponent implements OnInit {
       {
         name: 'Home',
         icon: 'uil uil-estate',
-        router: ['/', 'auth']
+        router: ['/', 'tracks']
       },
       {
-        name: 'Buscar',
-        icon: 'uil uil-search',
-        router: ['/', 'history']
+        name: 'Liked Songs',
+        icon: 'uil-heart',
+        router: ['/', 'favs']
       },
+      // {
+      //   name: 'Search',
+      //   icon: 'uil uil-search',
+      //   router: ['/', 'history']
+      // },
       {
-        name: 'Biblioteca',
+        name: 'Your Library',
         icon: 'uil uil-books',
-        router: ['/', 'favorites'],
-        query: { hola: 'mundo' }
-      }
-    ]
-
-    this.menu.extraItems = [
-      {
-        name: 'Crear lista',
-        icon: 'uil-plus-circle'
-      },
-      {
-        name: 'Canciones que te gustan',
-        icon: 'uil-heart'
+        router: ['/', 'history']
       }
     ]
 
     this.customOptions = [
       {
-        name: 'Mi lista º1',
+        name: 'My playlist Nº1',
         router: ['/']
       },
       {
-        name: 'Mi lista º2',
+        name: 'My playlist Nº2',
         router: ['/']
       },
       {
-        name: 'Mi lista º3',
+        name: 'My playlist Nº3',
         router: ['/']
       },
       {
-        name: 'Mi lista º4',
+        name: 'My playlist Nº4',
         router: ['/']
       }
     ]

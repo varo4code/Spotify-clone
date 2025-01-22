@@ -9,12 +9,26 @@ import * as dataRaw from '../../../../../data/tracks.json';
 })
 export class LikesBodyComponent implements OnInit {
   tracks: TrackModel[] = [];
+  orderOptions
+    : {column: keyof TrackModel, order: 'asc' | 'desc' }
+    = {column: 'name', order: 'asc'}
 
   constructor() { }
 
   ngOnInit(): void {
     const {data} = (dataRaw as any).default;
     this.tracks = data;
+  }
+
+  changeOrder(newColumn: keyof TrackModel){
+    const {order} = this.orderOptions;
+    const {column} = this.orderOptions;
+    this.orderOptions = {
+      column: newColumn,
+      order: (order == 'asc' && column == newColumn) ? 'desc' : 'asc'
+    }
+    console.log(this.orderOptions);
+    
   }
 
 }

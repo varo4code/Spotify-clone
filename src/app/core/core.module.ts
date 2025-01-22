@@ -5,6 +5,8 @@ import { PlayerComponent } from './components/player/player.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SectionComponent } from './components/section/section.component';
 import { CardComponent } from './components/card/card.component';
+import { RouterModule } from '@angular/router';
+import { DurationPipe } from './pipes/duration.pipe';
 
 
 
@@ -17,7 +19,8 @@ import { CardComponent } from './components/card/card.component';
     CardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     SidebarComponent,

@@ -4,14 +4,8 @@
         <img class="varologo" src="assets/icons/varocode.svg">
     </div>
     <ul class="side-bar__list list-one">
-        <!-- <li [routerLink]="item.router" [queryParams]="item.query" *ngFor="let item of mainMenu.defaultOptions">
-            <div class="list-wrapper-item">
-                <i [ngClass]="['uil',item.icon]"></i>
-                <span class="side-bar__list list-label">{{item.name}}</span>
-            </div>
-        </li> -->
-        <li  *ngFor="let item of menu.genericItems">
-            <div class="list-wrapper-item">
+        <li *ngFor="let item of menu.genericItems" [routerLink]="item.router">
+            <div class="list-wrapper-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
                 <i [ngClass]="['uil',item.icon]"></i>
                 <span class="side-bar__list list-label">{{item.name}}</span>
             </div>

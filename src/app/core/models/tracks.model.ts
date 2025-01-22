@@ -6,4 +6,5 @@ export interface TrackModel {
     url: string;
     _id: string | number;
     artist: string;
+    duration: {start: number, end: number}
 }
